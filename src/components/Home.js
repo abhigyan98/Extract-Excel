@@ -41,18 +41,18 @@ const Home = () => {
       <h1 className="text-center text-success" > Extract Excel </h1>
       <hr />
       <br /><br />
-      <div className="col-sm-5">
+      <div className="col-sm-3">
       <div className="card center border-0">
         <div className="card-body">
-          <h5 className="card-title">Upload Excel File</h5>
+          <h5 className="card-title">Upload Excel File</h5><br/>
           <form id="myForm" encType="multipart/form-data" onSubmit={handleSubmit}>
             <input type="file" name="file" id="file" /><br/><br/>
-            <button className="btn btn-primary" type="submit">Upload</button>
+            <button className="btn btn-primary  btn-lg" type="submit">Upload</button>
           </form>
         </div>
       </div>
       </div>
-      <div className="col-sm-7">
+      <div className="col-sm-9">
       <div className="card center border-0">
         <span>
           {data.map((dt, index) => {
